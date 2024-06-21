@@ -44,7 +44,7 @@ const addEventOnElements = function (elements, eventType, callback) {
 //    */
   
   const header = document.querySelector("[data-header]");
-//   const backTopBtn = document.querySelector("[data-back-top-btn]");
+  const backTopBtn = document.querySelector("[data-back-top-btn]");
   
   let lastScrollPos = 0;
   
