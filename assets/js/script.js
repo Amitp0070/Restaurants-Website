@@ -3,7 +3,7 @@
 
 
 // PRELOAD
-// loading will be after is loaded
+// loading will be end after document is loaded
 
 const preloader = document.querySelector("[data-preaload]");
 
@@ -59,7 +59,7 @@ const addEventOnElements = function (elements, eventType, callback) {
   }
   
   window.addEventListener("scroll", function () {
-    if (window.scrollY >= 30) {
+    if (window.scrollY >= 50) {
       header.classList.add("active");
       backTopBtn.classList.add("active");
       hideHeader();
