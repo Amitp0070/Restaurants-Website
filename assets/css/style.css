@@ -593,13 +593,13 @@ body.nav-active {
 }
 
 .preload.loaded {
-    transition-delay: 3s;
+    transition-delay: 2s;
     transform: translateY(100%);
 }
 
 .circle {
-    width: 112px;
-    height: 112px;
+    width: 150px;
+    height: 150px;
     border-radius: var(--radius-circle);
     border: 3px solid var(--white);
     border-block-start-color: var(--smoky-black-3);
@@ -2817,3 +2817,5 @@ textarea.input-field {
         left: 0;
      }
 }
+
+
