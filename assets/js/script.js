@@ -59,11 +59,11 @@ const addEventOnElements = function (elements, eventType, callback) {
   }
   
   window.addEventListener("scroll", function () {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 50) {          /* if window scroll grater then 50px */
       header.classList.add("active");
       backTopBtn.classList.add("active");
       hideHeader();
-    } else {
+    } else {                              /* if window scroll less then 50px */
       header.classList.remove("active");
       backTopBtn.classList.remove("active");
     }
@@ -81,12 +81,12 @@ const addEventOnElements = function (elements, eventType, callback) {
   const heroSliderNextBtn = document.querySelector("[data-next-btn]");
   
   let currentSlidePos = 0;
-  let lastActiveSliderItem = heroSliderItems[0];
+  let lastActiveSliderItem = heroSliderItems[0];  /* This variable stores the first slide item as the currently active one. */
   
   const updateSliderPos = function () {
     lastActiveSliderItem.classList.remove("active");
     heroSliderItems[currentSlidePos].classList.add("active");
-    lastActiveSliderItem = heroSliderItems[currentSlidePos];
+    lastActiveSliderItem = heroSliderItems[currentSlidePos];  /* It updates the lastActiveSliderItem to the new active slide.  */
   }
   
   const slideNext = function () {
