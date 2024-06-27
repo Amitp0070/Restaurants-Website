@@ -581,11 +581,10 @@ body.nav-active {
     display: grid;
     place-content: center;
     justify-items: center;
-    transition: var(--transition-3);
+    transition: var(--transition-2);
 }
-
 .preload > * {
-    transition: var(--transition-3);
+    transition: var(--transition-1);
 }
 
 .preload.loaded > * {
@@ -606,15 +605,9 @@ body.nav-active {
     margin-block-end: 45px;
     animation: rotate360 4s linear infinite;
 }
-
 @keyframes rotate360 {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(2turn);
-    }
+    0% { transform: rotate(0);}
+    100% { transform: rotate(2turn); }
 }
 
 .preload .text {
@@ -971,9 +964,8 @@ TOPBAR
 
 .hero-btn::after {
     inset: 0;
-    border: 1px solid var(--gold-crayola);
+    border: 2px solid var(--gold-crayola);
     animation: rotate360 15s linear infinite;
-
 }
 
 .slider-reveal {
